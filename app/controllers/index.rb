@@ -14,7 +14,7 @@ end
 get '/oauth2callback' do
 	token = oauth_client.auth_code.get_token(
     params[:code],
-    :redirect_uri => 'http://http://still-sands-7594.herokuapp.com/oauth2callback'
+    :redirect_uri => 'http://still-sands-7594.herokuapp.com/oauth2callback'
   )
   response = token.get 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json'
   @user_info = JSON.parse(response.body)
