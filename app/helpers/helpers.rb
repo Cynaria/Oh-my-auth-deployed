@@ -1,7 +1,7 @@
 helpers do
 	def get_uri
 		uri = oauth_client.auth_code.authorize_url(
-			:redirect_uri => 'http://localhost:9393/oauth2callback', # <-- your redirect URI
+			:redirect_uri => 'http://http://still-sands-7594.herokuapp.com/oauth2callback', # <-- your redirect URI
 			:scope => 'https://www.googleapis.com/auth/plus.login' # <-- determined by reading the Google OAuth2 docs
 			)
 	end
