@@ -1,0 +1,28 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+}
+
+th {
+  text-align: left;
+}
+
+.button{
+	padding: 5px 10px;
+	text-decoration: none;
+	background-color: #419c9e;
+	border: 3px solid #abb86c;
+	border-radius: 5px;
+	color: #ede1cc;
+}
+
+
+header{
+	text-align: center;
+	color: #7d9fb0;
+}
+
+div{
+	text-align: center;
+}

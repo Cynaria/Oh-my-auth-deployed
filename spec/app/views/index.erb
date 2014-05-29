@@ -1,0 +1,8 @@
+<% if @user_info %>
+  <div>
+    <h1><%= @user_info["name"] %></h1>
+    <img src="<%= @user_info["picture"] %>" alt="<%= @user_info["given_name"] %>">
+  </div>
+<% else %>
+  <a class="button" href="/login">Login with google!</a>
+<% end %>

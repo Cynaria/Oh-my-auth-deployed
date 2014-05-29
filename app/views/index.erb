@@ -1,0 +1,13 @@
+<% if @user_info %>
+  <header>
+    <h1><%= @user_info["name"] %></h1>
+  </header>
+  <div>
+    <img src="<%= @user_info["picture"] %>" alt="<%= @user_info["given_name"] %>">
+  </div>
+  </div>
+<% else %>
+	<div class="login">
+	  <a class="button" href="/login">Login with google!</a>
+	</div>
+<% end %>
