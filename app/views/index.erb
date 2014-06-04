@@ -1,5 +1,6 @@
 <% if @user_info %>
   <header>
+
     <h1><%= @user_info["name"] %></h1>
   </header>
   <div>
@@ -10,4 +11,6 @@
 	<div class="login">
 	  <a class="button" href="/login">Login with google!</a>
 	</div>
+  
+  <%= @user_info %>
 <% end %>
