@@ -7,10 +7,10 @@
     <img src="<%= @user_info["picture"] %>" alt="<%= @user_info["given_name"] %>">
   </div>
   </div>
-<% else %>
-	<div class="login">
-	  <a class="button" href="/login">Login with google!</a>
-	</div>
   <h2>blahduehfunicorns</h2>
-  <%= @user_info %>
+  <%= @user_info.inspect %>
+<% else %>
+  <div class="login">
+    <a class="button" href="/login">Login with google!</a>
+  </div>
 <% end %>
